@@ -1,0 +1,16 @@
+Prepro:
+
+don't forgot :datime format 
+
+
+https://www.kaggle.com/code/leonardshanjilee/house-prices-lgb-model
+https://www.kaggle.com/code/thomasmeiner/pi-ii-hpp-bluecast-with-conformal-prediction
+For sqft: https://www.kaggle.com/code/thomasmeiner/pi-ii-hpp-to-the-point-eda
+
+For view, bath : https://www.kaggle.com/code/gauravduttakiit/pic-ii-medium-quality-model-building
+
+
+Add features: https://www.kaggle.com/code/vanpatangan/interval-competition-house-prices
+Train: 
+https://www.kaggle.com/code/thiagomantuani/pi-ii-mapie-get-started
+https://www.kaggle.com/code/elainedazzio/20250516-pi
