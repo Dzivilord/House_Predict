@@ -6,3 +6,4 @@ ipykernel
 seaborn
 nbformat>=4.2.0
 plotly
+folium
