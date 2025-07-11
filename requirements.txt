@@ -7,5 +7,4 @@ seaborn
 nbformat>=4.2.0
 plotly
 folium
-re
-kneed
+kneed==0.8.5
