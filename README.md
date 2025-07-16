@@ -1,60 +1,74 @@
-## 2.1 EDA và Xử lý Dữ liệu (Exploratory Data Analysis & Data Preprocessing)
+# House Price Prediction with Prediction Intervals
 
-### Mục tiêu
+## 1. Mô tả Đồ án
 
-Trong bước này, nhóm tiến hành:
+Đây là một đồ án học thuật dựa trên cuộc thi **Prediction Interval Competition II - House Price**. Nhóm thực hiện sẽ xây dựng một mô hình dự đoán **khoảng giá nhà có độ tin cậy cao**, thay vì chỉ dự đoán giá trị trung bình như các bài toán hồi quy truyền thống.
 
-- Hiểu rõ hơn về tập dữ liệu thông qua các phân tích thống kê và trực quan hóa.
-- Thực hiện các bước xử lý dữ liệu ban đầu nhằm chuẩn bị cho quá trình huấn luyện mô hình dự đoán giá nhà.
+Mục tiêu cuối cùng là giúp mô hình có thể đưa ra các khoảng giá dự đoán (gồm **giới hạn dưới** và **giới hạn trên**) với độ tin cậy cao, phục vụ các ứng dụng thực tiễn như:
 
----
-
-### 1. Tổng quan Dữ liệu (`Overview.ipynb`)
-
-- **Đọc dữ liệu** từ tập tin `train.csv` và hiển thị thông tin cơ bản như:
-  - Kích thước dataset
-  - Kiểu dữ liệu từng cột
-  - Số lượng giá trị thiếu
-- **Thống kê mô tả**: sử dụng `.describe()` để xem các chỉ số như mean, std, min, max,...
-- **Phân nhóm thuộc tính**:
-  - Tách các thuộc tính thành dạng số (numerical) và dạng phân loại (categorical)
+- Tư vấn tài chính và đầu tư bất động sản
+- Định giá nhà ở, đất đai
+- Tính toán bảo hiểm và rủi ro tài sản
 
 ---
 
-### 2. Phân tích Dữ liệu Khám phá (EDA) (`EDA.ipynb`)
+## 2. Công việc chính
 
-- **Phân tích phân phối giá nhà**:
-  - Vẽ biểu đồ histogram và boxplot của `sale_price`
-  - Log-transform `sale_price` để kiểm tra phân phối chuẩn
-- **Tương quan với giá nhà**:
-  - Tính hệ số tương quan Pearson
-  - Vẽ heatmap các đặc trưng tương quan cao với `sale_price`
-- **Phân tích biến phân loại**:
-  - So sánh giá nhà giữa các nhóm như `grade`, `condition`, `waterfront`,...
-- **Đặc trưng địa lý**:
-  - Phân tích ảnh hưởng của `latitude`, `longitude` tới `sale_price` bằng biểu đồ scatter
+### 2.1 EDA và Xử lý Dữ liệu (`Q1/`)
 
----
+📊 Trong bước này, nhóm tiến hành:
 
-### 3. Tiền xử lý Dữ liệu (`Preprocess.ipynb`)
+- Phân tích sơ bộ dữ liệu (EDA) để hiểu rõ đặc trưng của tập dữ liệu
+- Thực hiện các bước tiền xử lý để chuẩn bị cho mô hình như:
+  - Loại bỏ ngoại lệ
+  - Điền giá trị thiếu
+  - Biến đổi các đặc trưng
+  - Chuẩn hóa các cột dạng số
+  - One-hot encoding các biến phân loại
 
-- **Xử lý missing values**:
-  - Với numerical: điền bằng giá trị trung bình hoặc median
-  - Với categorical: điền bằng `"Unknown"` hoặc mode
-- **Xử lý ngoại lệ**:
-  - Dựa vào boxplot, z-score để loại bỏ các mẫu bất thường
-- **Biến đổi dữ liệu**:
-  - Áp dụng `np.log1p()` lên `sale_price` để chuẩn hóa
-- **Chuẩn hóa dữ liệu số**:
-  - Sử dụng `StandardScaler` hoặc `MinMaxScaler`
-- **One-hot encoding**:
-  - Biến đổi các cột phân loại thành dạng số để đưa vào mô hình
-- **Tách tập train/test (nếu cần)**:
-  - Tách dữ liệu để đánh giá mô hình ở các bước sau
+🔗 Chi tiết hướng dẫn chạy notebook: xem file `Q1/README.md`
 
 ---
 
-### Ghi chú
+### 2.2 Huấn luyện Mô hình Dự đoán Khoảng giá (`Q2/`)
 
-- Các bước trên đảm bảo dữ liệu đầu vào sạch, đồng nhất và có tính biểu diễn tốt.
-- Việc phân tích kỹ càng giúp lựa chọn đặc trưng đầu vào hợp lý, từ đó tăng độ chính xác của mô hình học máy.
+- Ở bước này, nhóm xây dựng mô hình học máy để dự đoán **hai giá trị: Lower Bound và Upper Bound** cho `sale_price`. Kết quả được đánh giá thông qua điểm số trên hệ thống **Kaggle**.
+
+📤 Nhóm submit file kết quả dự đoán (`submission.csv`) gồm 3 cột: `id`, `pi_lower`, `pi_upper`  
+
+
+🔗 Chi tiết cách huấn luyện và chạy thử mô hình: xem file `Q2/README.md`
+
+---
+
+## 3. Yêu cầu Nộp bài
+
+### 3.1. Source Code
+
+- Thư mục `Q1/`: EDA và xử lý dữ liệu
+- Thư mục `Q2/`: Huấn luyện và đánh giá mô hình
+- Mỗi thư mục có `README.md` riêng, đảm bảo có thể chạy được trên **Google Colab**
+
+### 3.2. Báo cáo
+
+Bao gồm các nội dung:
+
+...  
+
+### 3.3. Video thuyết trình
+
+- Thời lượng: ... phút
+- (link Youtube or Gooogle Drive)
+
+### 3.4. Slide trình bày
+
+...  
+
+## 4. Lưu ý khi thực hiện
+
+- Điểm đồ án sẽ đánh giá theo số lượng thành viên và khối lượng công việc tương ứng
+- **Báo cáo chiếm 50% tổng điểm**, yêu cầu trình bày rõ ràng và có chiều sâu
+- Khi tham gia thi Kaggle, đặt tên đội theo cú pháp:
+
+- **Nghiêm cấm đạo văn** – mọi hành vi sao chép có thể dẫn đến 0 điểm toàn bộ đồ án
+- Giảng viên có thể yêu cầu **vấn đáp** nếu nghi ngờ về mức độ hiểu và đóng góp
