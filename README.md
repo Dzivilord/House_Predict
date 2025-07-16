@@ -63,12 +63,3 @@ Bao gồm các nội dung:
 ### 3.4. Slide trình bày
 
 ...  
-
-## 4. Lưu ý khi thực hiện
-
-- Điểm đồ án sẽ đánh giá theo số lượng thành viên và khối lượng công việc tương ứng
-- **Báo cáo chiếm 50% tổng điểm**, yêu cầu trình bày rõ ràng và có chiều sâu
-- Khi tham gia thi Kaggle, đặt tên đội theo cú pháp:
-
-- **Nghiêm cấm đạo văn** – mọi hành vi sao chép có thể dẫn đến 0 điểm toàn bộ đồ án
-- Giảng viên có thể yêu cầu **vấn đáp** nếu nghi ngờ về mức độ hiểu và đóng góp
