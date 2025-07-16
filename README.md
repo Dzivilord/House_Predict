@@ -41,7 +41,7 @@ Mục tiêu cuối cùng là giúp mô hình có thể đưa ra các khoảng gi
 
 ---
 
-## 3. Yêu cầu Nộp bài
+## 3. Các nội dung chính
 
 ### 3.1. Source Code
 
