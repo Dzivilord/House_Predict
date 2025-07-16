@@ -1,4 +1,4 @@
-## 2.1 EDA và Xử lý Dữ liệu (Exploratory Data Analysis & Data Preprocessing)
+## Q1. EDA và Xử lý Dữ liệu (Exploratory Data Analysis & Data Preprocessing)
 
 ### Mục tiêu
 
@@ -11,7 +11,7 @@ Trong bước này, nhóm tiến hành:
 
 ### 1. Tổng quan Dữ liệu (`Overview.ipynb`)
 
-- **Đọc dữ liệu** từ tập tin `train.csv` và hiển thị thông tin cơ bản như:
+- **Đọc dữ liệu** từ tập tin `dataset.csv` và hiển thị thông tin cơ bản như:
   - Kích thước dataset
   - Kiểu dữ liệu từng cột
   - Số lượng giá trị thiếu
