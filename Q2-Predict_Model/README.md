@@ -41,6 +41,7 @@ Notebook này được xây dựng nhằm mục đích huấn luyện một mô 
 - XGBoost
 
 ## Cấu trúc thư mục
+```
 .
 ├── train.ipynb
 ├── Dataset
@@ -51,7 +52,7 @@ Notebook này được xây dựng nhằm mục đích huấn luyện một mô 
 │   └── model1.pkl
 └── Submission
     └── submission_twostage_grid.csv
-
+```
 
 ## Hướng dẫn chạy notebook
 
