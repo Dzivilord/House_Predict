@@ -9,7 +9,7 @@
 ### Bước 4: Ở phần tải model pretrained, do quá trình huấn luyện model tương đối lâu nên nhóm đã chuẩn bị các lựa chọn:
 - Lựa chọn 1 (tiết kiệm thời gian): Chạy mặc định cell để load model pretrained và tiến hành dự đoán tập test dựa trên model đó
 - Lựa chọn 2 (khi cần xác thực): Comment toàn bộ đoạn code có trong cell để tiến hành quá trình huấn luyện lại từ đầu.
-### Bước 5: Kết quả dự đoán sẽ được lưu ở dạng `.csv`, và mô hình mới (nếu có) sẽ được lưu dưới dạng `.pkl`.
+### Bước 5: Kết quả dự đoán sẽ được lưu dưới dạng `.csv` trong thư mục `Submission`, mô hình mới (nếu có) sẽ được lưu trong thư mục `Model` dưới dạng `.pkl` trong runtime hiện hành.
 ## Mô tả dự án
 
 Notebook này được xây dựng nhằm mục đích huấn luyện một mô hình học máy cho bài toán dự đoán từ một tập dữ liệu đầu vào. Mục tiêu là đạt được hiệu suất dự đoán tốt nhất thông qua các bước xử lý dữ liệu, xây dựng mô hình và đánh giá chất lượng.
