@@ -48,11 +48,8 @@ Chi tiết hướng dẫn chạy notebook: xem file `Q1/README.md`
 
   - Khoảng dự đoán được tính bằng công thức:
 
-  $pi_lower = e^{\mi{log} - z \cdot \sigma}$  
-  $pi_upper = e^{\mi{log} + z \cdot \sigma}$  
+$[ center\_prediction - \gamma * \sqrt{predicted\_error}, center\_prediction + \gamma * \sqrt{predicted\_error} ]$
  
-Trong đó $\mu^2$ được dự đoán bởi **model1**, và $z$ là hệ số tương ứng với độ tin cậy.  
-
 File kết quả gồm 3 cột: `id`, `pi_lower`, `pi_upper`  
 
 Chi tiết cách huấn luyện và chạy thử mô hình: xem file `Q2/README.md`  
