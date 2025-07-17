@@ -49,8 +49,8 @@ Trong bước này, nhóm tiến hành:
   - Sử dụng `StandardScaler` hoặc `MinMaxScaler`
 - **One-hot encoding**:
   - Biến đổi các cột phân loại thành dạng số để đưa vào mô hình
-- **Tách tập train/test (nếu cần)**:
-  - Tách dữ liệu để đánh giá mô hình ở các bước sau
+- **Tải tập train và test mới về máy**
+  - Tải tập train và test mới về máy để chuẩn bị cho việc huấn luyện mô hình.
 
 ---
 
