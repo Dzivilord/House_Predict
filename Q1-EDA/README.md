@@ -1,3 +1,15 @@
+## Hướng dẫn thực thi các file có trong thư mục
+
+### Bước 1: Mở [Google Colab](https://colab.research.google.com/)
+### Bước 2: Chọn mục `Upload` > `Browse` > Chọn file cần thực thi
+### Bước 3: Chọn `Run all` để thực thi toàn bộ file notebook.
+- Đối với file `Overview.ipynb`: file chứa góc nhìn khái quát về tập dữ liệu.
+- Đối với file `EDA.ipynb`: file chứa những phân tích, khám phá, trực quan hóa chuyên sâu hơn về tập dữ liệu.
+- Đối với file `Preprocess.ipynb`: file chứa những thao tác tiền xử lý tập dữ liệu, chọn lọc những đặc trưng dựa trên những phân tích trước đó.
+### <u>Lưu ý</u>:
+- Dữ liệu sau khi được tiền xử lý trong file `Preprocess.ipynb` sẽ được tự động xuất ra file .csv ở trong đường dẫn của phiên runtime hiện hành, đồng thời cũng sẽ được tải về local của người chạy notebook.
+- Trong quá trình thực thi, khi notebook thực thi đến cell để tải về local thì trình duyệt có thể yêu cầu người dùng cho phép tải nhiều file cùng lúc. Lúc này hãy nhấn `Cho phép`
+- Các tập dữ liệu đầu ra của file `Preprocess.ipynb` sẽ là dữ liệu đầu vào cho mô hình huấn luyện và dự đoán trong file `Q2-Predict_Model/train.ipynb`
 ## Q1. EDA và Xử lý Dữ liệu (Exploratory Data Analysis & Data Preprocessing)
 
 ### Mục tiêu
