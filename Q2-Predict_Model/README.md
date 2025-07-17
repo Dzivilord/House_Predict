@@ -1,5 +1,15 @@
 # Training Model for Predictive Task
+## Hướng dẫn thực thi notebook
 
+### Bước 1: Mở [Google Colab](https://colab.research.google.com/)
+### Bước 2: Chọn mục `Upload` > `Browse` > Chọn file `train.ipynb`.
+### Bước 3: Ở phần upload dữ liệu, 2 file `new_train.csv` và `new_test.csv` hoàn toàn giống nhau ở 2 lựa chọn:
+- Lựa chọn 1 (tiết kiệm thời gian): Chạy mặc định sử dụng 2 file `new_train.csv` và `new_test.csv` có được khi thực thi `Preprocess.ipynb` và được lưu trữ sẵn từ trước.
+- Lựa chọn 2 (khi cần xác thực): Mở comment ở cell upload để tải lên thủ công 2 file `new_train.csv` và `new_test.csv` có được khi thực thi `Preprocess.ipynb` trước đó.
+### Bước 4: Ở phần tải model pretrained, do quá trình huấn luyện model tương đối lâu nên nhóm đã chuẩn bị các lựa chọn:
+- Lựa chọn 1 (tiết kiệm thời gian): Chạy mặc định cell để load model pretrained và tiến hành dự đoán tập test dựa trên model đó
+- Lựa chọn 2 (khi cần xác thực): Comment toàn bộ đoạn code có trong cell để tiến hành quá trình huấn luyện lại từ đầu.
+### Bước 5: Kết quả dự đoán sẽ được lưu ở dạng `.csv`, và mô hình mới (nếu có) sẽ được lưu dưới dạng `.pkl`.
 ## Mô tả dự án
 
 Notebook này được xây dựng nhằm mục đích huấn luyện một mô hình học máy cho bài toán dự đoán từ một tập dữ liệu đầu vào. Mục tiêu là đạt được hiệu suất dự đoán tốt nhất thông qua các bước xử lý dữ liệu, xây dựng mô hình và đánh giá chất lượng.
@@ -53,11 +63,3 @@ Notebook này được xây dựng nhằm mục đích huấn luyện một mô 
 └── Submission
     └── submission_twostage_grid.csv
 ```
-
-## Hướng dẫn chạy notebook
-
-1. Chạy train.ipynb trong Jupyter Notebook từ đầu đến cuối.
-
-- (Optional) Mở comment ở chỗ upload để tải lên 2 file new_train.csv và new_test.csv có được từ Preprocess.ipynb
-
-2. Kết quả dự đoán sẽ được lưu ở dạng .csv, và mô hình mới (nếu có) sẽ được lưu dưới dạng .pkl.
