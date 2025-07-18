@@ -55,27 +55,3 @@ File kết quả gồm 3 cột: `id`, `pi_lower`, `pi_upper`
 Chi tiết cách huấn luyện và chạy thử mô hình: xem file `Q2/README.md`  
 
 ---
-
-## 3. Các nội dung chính
-
-### 3.1. Source Code
-
-- Thư mục `Q1/`: EDA và xử lý dữ liệu
-- Thư mục `Q2/`: Huấn luyện và đánh giá mô hình
-- Mỗi thư mục có `README.md` riêng, đảm bảo có thể chạy được trên **Google Colab**
-
-### 3.2. Báo cáo
-
-Bao gồm các nội dung:
-
-...  
-
-### 3.3. Video thuyết trình
-
-
-- Thời lượng: ... phút
-- (link Youtube or Gooogle Drive)
-
-### 3.4. Slide trình bày
-
-...  
