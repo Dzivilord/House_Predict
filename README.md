@@ -72,9 +72,22 @@ Bao gồm các nội dung:
 
 ### 3.3. Video thuyết trình
 
+
 - Thời lượng: ... phút
 - (link Youtube or Gooogle Drive)
 
 ### 3.4. Slide trình bày
 
 ...  
+# LaTeX Test
+
+## Original Formula Attempt (might fail due to _)
+$[ center_prediction - \gamma * \sqrt{predicted_error}, center_prediction + \gamma * \sqrt{predicted_error} ]$
+
+## With Escaped Underscores (standard LaTeX for literal _)
+$[ center\_prediction - \gamma \cdot \sqrt{predicted\_error}, center\_prediction + \gamma \cdot \sqrt{predicted\_error} ]$
+
+## Display Math with Escaped Underscores
+$$
+[ center\_prediction - \gamma \cdot \sqrt{predicted\_error}, center\_prediction + \gamma \cdot \sqrt{predicted\_error} ]
+$$
